@@ -49,4 +49,4 @@ Specific frameworks and controls:
         To learn more about controls, particularly those used to protect health-related assets from a variety of threat types, review the U.S. Department of Health and Human Services’ 
 Physical Access Control presentation:
 
-    https://www.hhs.gov/sites/default/files/physical-access-control.pdf
+    
