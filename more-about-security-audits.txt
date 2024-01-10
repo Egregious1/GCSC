@@ -1,0 +1,68 @@
+More about security audits:
+
+    Security audits:
+
+        A security audit is a review of an organization's security controls, policies, and procedures against a set expectations. Audits are independent reviews that evaluate whether an organization is meeting internal and external criteria. Internal criteria include outlined policies, procedures, and best practices. External criteria include regulatory compliance, laws, and federal regulations.
+
+        Additionally, a security audit can be used to asses and organization's established security controls. As a reminder, security controls are safeguards designed to reduces specific security risks.
+
+        Audits help ensure that security checks are made (i.e. daily monitoring of security information and event management dashboards), to identify threats, risks, and vulnerabilities. This helps maintain an organization's security posture. And, if there are security issues, a remediation process must be in place.
+
+    Goals and objectives of an audit:
+
+        The goal of an audit is to ensure an organization's information technology practices are meeting industry organizational standards. The objective is to identify and address area of remediation and growth. Audits provide direction and clarity by identifying what the current failures are and developing a plan to correct them.
+
+        Security audits must be performed to safeguard data and avoid penalties and fines from governmental agencies. The frequency of audits is dependent on local laws and federal compliance regulations.
+
+    Factors that affect audits
+
+        Factors that determine the types of audits an organization implements include:
+
+            industry types
+
+            organization size
+
+            ties to the applicable government regulations
+
+            a business's geographical location
+
+            a business decision to adhere to a specific regulatory compliance.
+
+        To review common compliance regulations the different organizations need to adhere to, refer to file controls, frameworks, and compliance.
+
+    The role of frameworks and controls in audits:
+
+        Along with compliance, its important to mention the role of frameworks and controls in security audits. Frameworks such as the NIST CSF and the ISO 27000 series are designed to help organizations prepare for regulatory compliance security audits. by adhering to these and other relevant frameworks, organizations can save time when conducting external and internal audits. Additionally, frameworks, when used alongside controls, can support organizations' ability to align with regulatory compliance requirements and standards.
+
+        There are three main categories of controls to review during your audit, which are administrative and/or managerial, technical, and physical controls. 
+
+    Audit Checklist
+
+        Its necessary to create an audit checklist before conducting an audit. A checklist is generally made up of the following areas of focus:
+
+    identify the scope of the audit
+
+        The audit should:
+            list assets that will be assessed(e.g., firewalls are configured correctly, PII is secure, physical assets are locked, ect.)
+
+            note how the audit will help the organization achieve its desired goals
+
+            indicate how often an audit should be performed
+
+            include an evaluation of organizational policies, protocols, and procedures to make sure they are working as intended and being implemented.
+
+    Complete a risk assessment:
+
+        a risk assessment is used to evaluate identified organizational risks related to budget, controls, internal processes, and external standards (i.e., regulations)
+
+    Conduct the audit:
+
+        when conducting an internal audit, you will assess the security of the identified assets listed in the audit scope.
+
+    Create a mitigation plan:
+
+        a mitigation plan is a strategy established to lower the level of risk and potential costs, penalties, or other issues that can negatively affect the organization's security posture.
+
+    Communicate results to stakeholders:
+
+        the end result of this process is providing a detailed report of findings, suggested improvements needed to lower the organization's level of risk, and compliance regulations and standards the organization needs to adhere to.
