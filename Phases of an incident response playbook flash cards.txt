@@ -1,0 +1,25 @@
+Phases of an incident response playbook:
+
+Preparation:
+
+    before incidents occur, mitigate potential impacts on the organization by documenting establishing staffing plans, and educating users.
+
+Detection and analysis:
+
+    Detect and analyze events by implementing defined processes and appropriate technology.
+
+Containment:
+
+    Prevent further damage and reduce immediate impact of incidents
+
+Eradication and recovery:
+
+    completely remove artifacts of the incident so that an organization can return to normal operations
+
+Post incident activity:
+
+    Document the incident, inform organizational leadership, and apply lessons learned
+
+Coordination
+
+    Report incidents and share information throughout the response process, based on established standards
