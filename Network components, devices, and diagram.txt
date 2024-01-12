@@ -1,0 +1,54 @@
+Network components, devices, and diagrams
+
+	Devices on a network
+
+		Network devices are the devices that maintain information and services for users of a network. There devices connect over wired and wireless connections. After establishing a connection to the network, the devices send data packets. The data packets provide information about the source and the destinations of the data.
+
+	Devices and desktop computers
+
+		Most internet users are familiar with everyday devices, such as personal computers, laptops, mobile phones, and tablets. Each device and desktop computer has a unique MAC address and IP address, which identifies it on the network and a network interface that sends and receives data packets. These devices can connect to the network via a hard wire or a wireless connection.
+
+	Firewalls
+
+		A firewall is a network security device that monitors traffic to or from your network. Firewalls can also restrict specific incoming and outgoing network traffic. The organization configures the security rules. Firewalls often reside between the secured and controlled internal network and the untrusted network resources outside the organization such as the internet.
+
+	Servers
+
+		servers provide a service for other devices on the network. The devices that connect to a server are called clients. the following image outlines this model with is called the client-server model.
+
+										database
+											:
+											:
+											:
+					client 1 > > > > > > server < < < < < < client 3
+											:
+											:
+											:
+										client 2
+
+		In this model, clients send requests to the server for information and services. the server preforms the requests for the clients. Common examples include DNS servers that preform domain name lookups for internet sites, file servers that store and retrieve files from a database, and corporate mail servers that organize mail for a company.
+
+	Hubs and switches
+
+		hubs and switches both direct traffic on a local network. A Hub is a device that provides a common point of connection for all devices directly connected to it. Hubs additionally repeat all information out to all ports. from a security perspective, this makes hubs vulnerable to eavesdropping. For this reason, hubs are not used as often on modern networks, most organizations use switches instead.
+
+		A switch forwards packets between devices directly connected to it. It maintains a MAC address table that matches MAC addresses of devices on the network to port numbers on the switch and forwards the incoming data packets according to the destination MAC address
+
+	Routers
+
+		routers sit between networks and direct traffic, based on the IP address of the destination network. The IP address of the destination network is contained in the IP header. The router reads the header information and forwards the packet to the next router on the path to the destination. This continues until the packet reaches the destination network. Routers can also include a firewall feature that allows or blocks incoming traffic based on information in the transmission. This stops malicious traffic from entering the private network and damaging the local area network.
+
+Modems and wireless access point
+
+	Modems
+		modems usually interface with an ISP. ISP's provide internet connectivity via telephone lines, coaxial cables, fiber optic cables, or satellites. Modems receive transmissions from the internet and translate them into digital signals that can be understood by the devices on the network. Usually, modems connect to a router that takes the decoded transmissions and sends them on the local network.  
+			note: enterprise networks used by large organizations to connect their users and devices often use other broadband technologies to handle high volume traffic instead of using a modem.
+
+	Wireless access point
+
+		A wireless access point sends and receives digital signals over radio waves creating a wireless network. devices with wireless adapters connect to the access point using wi-fi. wi-fi refers to a set of standards that are used by network devices to communicate wirelessly. wireless access points and the devices connected to them use wi-fi protocols to send data through radio waves where they are sent to routers and switches and directed along the  path to their final destination.
+
+Using network diagrams as a security analyst
+	network diagrams allow network administrators and security personnel to imagine the architecture and design of their organization's private network.
+
+	network diagrams are topographical maps that show the devices on the network and how they connect. network diagrams use small representative graphics to portray each network device and dotted lines to show how each device connects to the other. Security analysts use network diagrams to learn about network architecture and how to design networks.
