@@ -18,7 +18,7 @@ three categories of network protocols
         communication protocol govern the exchange of information in network transmission. They dictate how the data is transmitted between devices and timing of the communication. They also include methods to recover data lost in transit. here are a few of them:
 
             Transmission control protocol (TCP)
-                an internet communication protocol that allows two devices to form a connection and stream data. TCP uses a three-way handshake process. First the device sends a synchronize (SYN) request to a server. Then the server responds with a SYN/ACK packet to acknowlede receipt of the device's request. Once the server receives the final ACK packet from the device, a TCP connection is established in the TCP/IP model, TCP occurs at the transport layer.
+                an internet communication protocol that allows two devices to form a connection and stream data. TCP uses a three-way handshake process. First the device sends a synchronize (SYN) request to a server. Then the server responds with a SYN/ACK packet to acknowledge receipt of the device's request. Once the server receives the final ACK packet from the device, a TCP connection is established in the TCP/IP model, TCP occurs at the transport layer.
 
                 User datagram protocol (UDP)
                     a connectionless protocol that does not establish a connection between devices before a transmission. This makes it less reliable than TCP. But it also means that it works well for transmissions that need to get to their destination quickly. For example, one use of UDP is for internet gaming transmissions. In the TCP/IP model, UDP occurs at the transport layer.
