@@ -1,0 +1,32 @@
+overview of interception attacks
+
+A closer review of packet sniffing
+
+Packet sniffing is the practice of capturing and inspecting data packets across a network. on a private network, data packets are directed to the matching destination device on a network.
+
+The device's Network Interface Card (NIC) us a piece of hardware that connects the device to a network. The NIC reads the data transmission, and if it contains the device's MAC address, it accepts the packet and sends it to the device to process the information based on the protocol. this occurs in all standard network operations. However a NIC can be set to promiscuous mode, which means that it accepts all traffic on the network, even the packets that aren't addressed to the NIC device. malicious actors might use software like Wireshark to capture the data on a private network and store it for later use. They can then use the personal information to their own advantage. Alternatively, they might use the IP and MAC addresses of authorized users of the private network to preform IP spoofing.
+
+A closer review of IP spoofing
+
+after a malicious actor has sniffed packets on the network, they can impersonate the IP and MAC addresses of authorized devices to perform an IP spoofing attack. Firewalls can prevent IP spoofing attacks by configuring it to refuse unauthorized IP packets and suspicious traffic. 
+
+On-path attack
+    
+    an on-path attack happens when a hacker intercepts the communication between two devices or servers that have a trusted relationship. the transmission between these two trusted network devices could contain valuable information like usernames and passwords the the malicious actor can collect. An on-path attack is somethings referred to as a meddler-in-the-middle attack because the hacker is hidding in hte middle of communications between two trusted parties.
+
+    Or, it could be that the intercepted transmission contains a DNS system look-up. A DNS server translates website domain names into IP addresses. If a malicious actor intercepts a transmission containing a DNS lookup, they could spoof the DNS response from the server and redirect a domain name to a different IP address, perhaps one that contains malicious code or other threats. The most important way to protect against an on-path attack is to encrypt your data in transit, eg using TLS.(Transport Layer Security)
+
+Smurf attack
+
+    A Smurf attack is a network attack that is performed when an attacker sniffs an authorized user's IP address and floods it with packets. Once the spoofed packets reached the broadcast address, it is sent to all the devices and servers on the network. 
+
+    In Smurf attack, IP spoofing is combined with another DOS technique to flood the network with unwanted traffic. for example the spoofed packet could include an internet control message protocol (ICMP) ping. ICMP is used to troubleshoot a network. If too many ICMP messages are transmitted, the ICMP echo responses overwhelm the servers on the network and they shut down. This creates a denial of service and can bring an organization to a halt. 
+
+    an important way to protect against Smurf attacks is to use and advanced firewall that can monitor any unusual traffic on the network. Most next generation firewalls (NGFW) include features that detect network anomalies to ensure that oversized broadcasts are detected before they have a chance to bring down the network.
+
+DoS attack
+
+    A denial of service attack is a class of attacks where the attacker prevents the compromised system from performing legitimate activity or responding to legitimate traffic. Unlike IP spoofing, however the attacker will not receive a response from the targeted host. Everything about the data packet is authorized including the IP addresses. the attackers keep sending IP packets containing fake IP addresses until the network crashes. 
+
+    Pro tip: remember the principle of defense-in-depth. there is not one perfect strategy for stopping each kind of attack. You can layer your defense by using multiple strategies. In this case, using industry standard encryption will strengthen you security and help you defend from DoS attacks on more than one level.
+
