@@ -1,0 +1,81 @@
+Network security applications
+
+different types of layered security:
+
+hosts === LAN === Router === firewall === modem === web service
+
+hosts === Lan === Switch/IDS === router === firewall === router === web service
+
+hosts === Lan === IPS === Router === firewall === modem === web service
+
+take note of where each tool is located on the network. Each tool has its own place in the networks architecture security analysts are required to understand the network topologies shown in the diagrams throughout this reading.
+
+Firewall - 
+    so far we learned about stateless firewalls, stateful firewalls, and next gen firewalls (NGFWs), and security advantages of each of them.
+
+    Most firewalls are similar in their basic functions. Firewalls allow or block traffic based on a set of rules. As data packets enter a network, the packet header is inspected and allowed or denied based on its port number. NGFWs are also able to inspect packet payloads. Each system should have its own firewall, regardless of the network firewall.
+
+    hosts === Lan === router === Firewall === modem === web service
+
+Intrusion detection system
+
+    an intrusion detection system (IDS) is an application that monitors system activity and alerts on possible intrusions. An IDS alerts admins based on the signature of malicious traffic.
+    
+    the IDS is configured to detect known attacks. IDS systems often sniff data packets as they move across the network and analyze them for the characteristics of known attacks. Some IDS systems review not only for signatures of known attacks but also for anomalies that could be the sign of malicious activity. When the IDS discovers and anomaly, it sends an alert to the network admin who can then investigate further.
+
+    the limitations of IDS systems are that they can only scan for known attacks might not be caught. the other limitations is that the ids doesn't actually stop the incoming traffic if it detects something awry. It's up to the network admin to catch the malicious activity before it does anything damaging to the network.
+
+hosts === LAN === Switch/IDS === router === firewall === modem ===web service
+
+    when combined with firewall, and IDS adds another layer of defense. The IDS is placed behind the firewall and before entering the LAN, which allows the IDS to analyze data streams after network traffic that is disallowed by the firewall has been filtered out. This is done to reduce noise in IDS alerts, also referred to as false positives.
+
+Intrusion Prevention System (IPS)
+
+an IPS is an application that monitors system activity for intrusive activities and takes action to stop the activity. It offers even more protection than an IDS because it actively stops anomalies when they are detected unlike the IDS that simply reports the anomaly to a network admin.
+
+An IPS searches for a signatures of known attacks and data anomalies. An IPS reports the anomaly to security analysts and blocks a specific sender or drops network packets that seems suspect
+
+hosts === LAN === IPS === router === firewall === modem === web service
+
+the IPS (like an IDS) sits behind the firewall in the network architecture. This offers a high level of security because risky data streams are disrupted before they even reach sensitive parts of the network.
+
+Full packet capture devices
+
+    full packet capture devices can be incredibly useful for network administrators and security professionals. These devices allow you to record and analyze all of the data that is transmitted over your network. They also aid in investigating alerts created by and IDS.
+
+security information and even management 
+
+    a SIEM is an application that collects and analyzes log data to monitor critical activities in an organization. SIEM tools work in real time to report suspicious activity in a centralized dashboard. SIEM tools additionally analyze network log dat sourced from IDSs, IPs, firewalls, VPNs, proxies, and DNS logs. SIEM tools are a way to aggregate security event data so that it all appears in one place for security analysts to analyze. this is referred to as a single pane of glass.
+
+    Chronicle - is a cloud native tool designed to retain, analyze, and search data. 
+
+    Splunk - another common SIEM tool. Splunk offers different SIEM tool options: Splunk Enterprise and Splunk Cloud. Both options include detailed dashboards which help security professionals to review and analyze an organization's data. There are also other similar SIEM tools available, and its important for security professionals to research the different tools to determine which one is most beneficial to the organization. 
+
+    A SIEM tool doesn't replace the expertise of security analysts, or of the network- and system-hardening activities, but they're used in combination with other security methods. Security analysts often work in a Security Operations Center (SOC) where they can monitor the activity across the network. They can then use their expertise and experience to determine how to respond to the information on the dashboard and decide when the events meet the criteria to be escalated to oversight.
+
+    key takeaways
+
+    Devices / Tools        advantages              Disadvantages
+
+    Firewall - 
+        firewalls allows or blocks traffic based on a set of rules.
+        
+        a firewall is only able to filter packets based on information provided in the header of the packets
+
+    IDS - 
+        an IDS detects and alerts admins about possible intrusions, attacks, and other malicious traffic.
+
+        an IDS can only scan for non attacks or obvious anomalies; new and sophisticated attacks might not be caught. It doesn't actually stop the incoming traffic.
+
+    IPS - 
+        an IPS monitors system activity for intrusions and anomalies and takes action to stop them.
+
+        an IPS is an inline appliance. If it fails the connection between the private network and the internet breaks. It might detect false positives and block legitimate traffic.
+
+    SIEM - 
+        A SIEM tool collects and analyzes log data from multiple network machines. It affrefates security event for monitoring in a central dashboard.
+
+        a SIEM tool only reports on possible security issues. It does not take any actions to stop or prevent suspicious events.
+
+    each of these devices or tools cost money to purchase, install, maintain. An organization might need to hire additional personnel to monitor the security tools, as in the case of a SIEM. Decision-makers are tasked with selecting the appropriate level of security based on cost and risk to the organization.
+
