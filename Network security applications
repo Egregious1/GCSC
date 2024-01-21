@@ -45,7 +45,7 @@ Full packet capture devices
 
 security information and even management 
 
-    a SIEM is an application that collects and analyzes log data to monitor critical activities in an organization. SIEM tools work in real time to report suspicious activity in a centralized dashboard. SIEM tools additionally analyze network log dat sourced from IDSs, IPs, firewalls, VPNs, proxies, and DNS logs. SIEM tools are a way to aggregat security event data so that it all appears in one place for security analysts to analyze. this is referred to as a single pane of glass.
+    a SIEM is an application that collects and analyzes log data to monitor critical activities in an organization. SIEM tools work in real time to report suspicious activity in a centralized dashboard. SIEM tools additionally analyze network log dat sourced from IDSs, IPs, firewalls, VPNs, proxies, and DNS logs. SIEM tools are a way to aggregate security event data so that it all appears in one place for security analysts to analyze. this is referred to as a single pane of glass.
 
     Chronicle - is a cloud native tool designed to retain, analyze, and search data. 
 
@@ -65,7 +65,7 @@ security information and even management
     IDS - 
         an IDS detects and alerts admins about possible intrusions, attacks, and other malicious traffic.
 
-        an ids can only scan for knon attacks or obvious anomalies; new and sophisticated attacks might not be caught. It doesn't actually stop the incoming traffic.
+        an IDS can only scan for non attacks or obvious anomalies; new and sophisticated attacks might not be caught. It doesn't actually stop the incoming traffic.
 
     IPS - 
         an IPS monitors system activity for intrusions and anomalies and takes action to stop them.
