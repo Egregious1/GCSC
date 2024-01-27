@@ -10,7 +10,7 @@ configuration checks:
 
     updating the encryption standards that is stored in databases.
 
-    tos ee if there are any unauthorized changes to the system.
+    to see if there are any unauthorized changes to the system.
 
 Disabling unused ports:
 
